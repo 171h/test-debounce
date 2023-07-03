@@ -46,6 +46,10 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "perfect-debounce": "npm:@171h/debounce@^1.1.1",
+    "time-span": "^5.1.0"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.4",
     "@antfu/ni": "^0.21.3",
