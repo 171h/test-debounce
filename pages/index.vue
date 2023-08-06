@@ -22,6 +22,17 @@ const online = useOnline()
     <hr>
     <TestAccordion />
     <TestDefineShortcuts />
-
+    <TestAlert />
   </div>
 </template>
+
+<style>
+h1 {
+  text-align: left;
+  font-weight: bold;
+}
+h1::before {
+  content: '🧪';
+  margin-right: 0.5rem;
+}
+</style>
