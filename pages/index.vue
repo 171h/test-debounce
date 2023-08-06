@@ -19,5 +19,9 @@ const online = useOnline()
       </template>
     </Suspense>
     <InputEntry />
+    <hr>
+    <TestAccordion />
+    <TestDefineShortcuts />
+
   </div>
 </template>
