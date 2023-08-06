@@ -23,6 +23,7 @@ const online = useOnline()
     <TestAccordion />
     <TestDefineShortcuts />
     <TestAlert />
+    <TestAvatar />
   </div>
 </template>
 
@@ -30,6 +31,7 @@ const online = useOnline()
 h1 {
   text-align: left;
   font-weight: bold;
+  margin-top: 1rem;
 }
 h1::before {
   content: '🧪';
