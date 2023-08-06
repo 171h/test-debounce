@@ -23,30 +23,30 @@ const items3 = [{
   label: 'Getting Started',
   icon: 'i-heroicons-information-circle',
   defaultOpen: true,
-  slot: 'getting-started'
+  slot: 'getting-started',
 }, {
   label: 'Installation',
   icon: 'i-heroicons-arrow-down-tray',
   defaultOpen: true,
-  slot: 'installation'
+  slot: 'installation',
 }, {
   label: 'Theming',
   icon: 'i-heroicons-eye-dropper',
   defaultOpen: true,
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.'
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.',
 }]
 </script>
 
 <template>
   <h1>TestAccordion</h1>
-  <UAccordion default-open multiple open-icon="i-heroicons-plus" close-icon="i-heroicons-minus" :items="items" variant="link" size="sm" />
+  <UAccordion multiple default-open open-icon="i-heroicons-plus" close-icon="i-heroicons-minus" :items="items" variant="link" size="sm" />
 
   <UAccordion :items="items" :ui="{ wrapper: 'flex flex-col w-full' }">
     <template #default="{ item, index, open }">
-      <UButton color="gray" variant="ghost" class="border-b border-gray-200 dark:border-gray-700" :ui="{ rounded :'rounded-none', padding: { sm:'p-3' } }">
+      <UButton color="gray" variant="ghost" class="border-b border-gray-200 dark:border-gray-700" :ui="{ rounded: 'rounded-none', padding: { sm: 'p-3' } }">
         <template #leading>
-          <div class="w-6 h-6 rounded-full bg-primary-500 dark:bg-primary-400 flex items-center justify-center -my-1">
-            <UIcon :name="item.icon" class="w-4 h-4 text-white dark:text-gray-900" />
+          <div class="bg-primary-500 dark:bg-primary-400 h-6 w-6 flex items-center justify-center rounded-full -my-1">
+            <UIcon :name="item.icon" class="h-4 w-4 text-white dark:text-gray-900" />
           </div>
         </template>
 
@@ -55,7 +55,7 @@ const items3 = [{
         <template #trailing>
           <UIcon
             name="i-heroicons-chevron-right-20-solid"
-            class="w-5 h-5 ms-auto transform transition-transform duration-200"
+            class="ms-auto h-5 w-5 transform transition-transform duration-200"
             :class="[open && 'rotate-90']"
           />
         </template>
@@ -65,15 +65,15 @@ const items3 = [{
 
   <UAccordion :items="items3">
     <template #item="{ item }">
-      <p class="italic text-gray-900 dark:text-white text-center">
+      <p class="text-center italic text-gray-900 dark:text-white">
         {{ item.description }}
       </p>
     </template>
 
     <template #getting-started>
-      <div class="flex flex-col justify-center items-center gap-1">
-        <NuxtLink to="/getting-started" class="flex items-end gap-1.5 font-bold text-xl text-gray-900 dark:text-white">
-          <Logo class="w-8 h-8 text-primary-500 dark:text-primary-400" />
+      <div class="flex flex-col items-center justify-center gap-1">
+        <NuxtLink to="/getting-started" class="flex items-end gap-1.5 text-xl font-bold text-gray-900 dark:text-white">
+          <Logo class="text-primary-500 dark:text-primary-400 h-8 w-8" />
 
           <span class="hidden sm:block">NuxtLabs</span><span class="sm:text-primary-500 dark:sm:text-primary-400">UI</span>
         </NuxtLink>
@@ -85,7 +85,7 @@ const items3 = [{
     </template>
 
     <template #installation="{ description }">
-      <div class="flex flex-col justify-center items-center gap-1 mb-4">
+      <div class="mb-4 flex flex-col items-center justify-center gap-1">
         <h3 class="text-xl font-bold text-gray-900 dark:text-white">
           Installation
         </h3>
