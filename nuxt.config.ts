@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
+    '@nuxthq/ui',
   ],
 
   experimental: {
@@ -20,7 +21,7 @@ export default defineNuxtConfig({
   },
 
   css: [
-    '@unocss/reset/tailwind.css',
+    '@unocss/reset/tailwind-compat.css',
   ],
 
   colorMode: {
