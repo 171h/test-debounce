@@ -12,8 +12,8 @@ defineShortcuts({
 </script>
 
 <template>
+  <h1>TestDefineShortcuts</h1>
   <UContainer>
-    <h1>TestDefineShortcuts</h1>
     <UModal v-model="isOpen" />
   </UContainer>
 </template>
