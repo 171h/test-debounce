@@ -17,6 +17,7 @@ const country2 = ref('CA')
 </script>
 
 <template>
+  <h1>Test Select</h1>
   <USelect v-model="country" :options="countries" />
   <!-- When using objects, you can configure which field will be used for display through
     the option-attribute prop that defaults to label and which field will be used for

@@ -33,6 +33,7 @@ const online = useOnline()
     <TestInput />
     <TestTextarea />
     <TestSelect />
+    <TestSelectMenu />
   </div>
 </template>
 
