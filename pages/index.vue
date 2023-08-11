@@ -41,6 +41,9 @@ const online = useOnline()
     <TestFormGroup />
     <TestForm />
     <TestTable />
+    <TestVNav />
+    <TestComPalette />
+    <TestTabs />
   </div>
 </template>
 
