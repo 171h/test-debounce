@@ -74,8 +74,8 @@ const items3 = [{
       <div class="flex flex-col items-center justify-center gap-1">
         <NuxtLink to="/getting-started" class="flex items-end gap-1.5 text-xl font-bold text-gray-900 dark:text-white">
           <Logo class="text-primary-500 dark:text-primary-400 h-8 w-8" />
-
-          <span class="hidden sm:block">NuxtLabs</span><span class="sm:text-primary-500 dark:sm:text-primary-400">UI</span>
+          <span class="hidden sm:block">NuxtLabs</span>
+          <span class="sm:text-primary-500 dark:sm:text-primary-400">UI</span>
         </NuxtLink>
 
         <p class="text-sm text-gray-500 dark:text-gray-400">

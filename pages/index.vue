@@ -26,6 +26,9 @@ const online = useOnline()
     <TestAvatar />
     <TestBadge />
     <TestButton />
+    <TestDropdown />
+    <TestIcon />
+    <TestKbd />
   </div>
 </template>
 
