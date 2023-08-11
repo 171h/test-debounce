@@ -34,6 +34,7 @@ const online = useOnline()
     <TestTextarea />
     <TestSelect />
     <TestSelectMenu />
+    <TestCheckbox />
   </div>
 </template>
 

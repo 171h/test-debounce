@@ -68,8 +68,20 @@ const selected30 = ref([])
     multiple
     by="id"
   />
+  <USelectMenu v-slot="{ open }" v-model="selected" :options="people">
+    <UButton color="gray">
+      {{ selected }}
+      <UIcon name="i-heroicons-chevron-right-20-solid" class="h-5 w-5 transition-transform" :class="[open && 'transform rotate-90']" />
+    </UButton>
+  </USelectMenu>
 
   <USelectMenu v-model="selected2" :options="people" multiple placeholder="Select people" />
+  <USelectMenu v-model="selected2" :options="people" multiple placeholder="Select people">
+    <template #label>
+      <span v-if="selected2.length" class="truncate">{{ selected2.join(', ') }}</span>
+      <span v-else>Select people</span>
+    </template>
+  </USelectMenu>
 
   <USelectMenu v-model="selected10" :options="people10">
     <template #label>
