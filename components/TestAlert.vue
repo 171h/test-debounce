@@ -21,11 +21,20 @@ const props = defineProps<{
     }"
   />
   <UAlert text-left description="This is description" title="Heads up!" :avatar="{ src: 'https://avatars.githubusercontent.com/u/40647432?v=4' }" />
-  <UAlert title="Heads up!" :actions="[{ label: 'Action 1' }, { variant: 'ghost', color: 'gray', label: 'Action 2' }]" />
+  <UAlert
+    title="Heads up!" :actions="[
+      { label: 'Action 1', click: () => console.log('Action 1') },
+      { variant: 'ghost', color: 'gray', label: 'Action 2', click: () => console.log('Action 2') },
+    ]"
+  />
 
   <UButton>12345</UButton>
 
-  <UAlert title="Heads up!" description="123" :actions="[{ variant: 'solid', color: 'primary', label: 'Action 1' }, { variant: 'outline', color: 'primary', label: 'Action 2' }]" />
+  <UAlert
+    title="Heads up!" description="123" :actions="[
+      { variant: 'solid', color: 'primary', label: 'Action 1', click: () => console.log('Action 1') },
+      { variant: 'outline', color: 'primary', label: 'Action 2', click: () => console.log('Action 2') }]"
+  />
 
   <UAlert title="Heads <i>up</i>!" icon="i-heroicons-command-line">
     <template #title="{ title }">

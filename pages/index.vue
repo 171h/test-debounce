@@ -29,6 +29,10 @@ const online = useOnline()
     <TestDropdown />
     <TestIcon />
     <TestKbd />
+    <TestLink />
+    <TestInput />
+    <TestTextarea />
+    <TestSelect />
   </div>
 </template>
 
