@@ -10,7 +10,7 @@ const value = ref('')
   <UTextarea size="sm" />
   <UTextarea size="xl" />
   <UTextarea placeholder="Search..." />
-  <UTextarea rows="1" />
+  <UTextarea :rows="1" />
   <UTextarea disabled />
   <UTextarea autoresize />
 </template>
