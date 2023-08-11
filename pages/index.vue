@@ -37,6 +37,10 @@ const online = useOnline()
     <TestCheckbox />
     <TestRadio />
     <TestToggle />
+    <TestRange />
+    <TestFormGroup />
+    <TestForm />
+    <TestTable />
   </div>
 </template>
 
