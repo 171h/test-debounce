@@ -22,6 +22,9 @@ export default defineNuxtConfig({
 
   css: [
     // '@unocss/reset/tailwind-compat.css',
+    // '~/assets/css/tailwind.css',
+    // '@unocss/reset/tailwind.css',
+    // '@unocss/reset/eric-meyer.css',
   ],
 
   colorMode: {

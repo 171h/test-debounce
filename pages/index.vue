@@ -35,6 +35,8 @@ const online = useOnline()
     <TestSelect />
     <TestSelectMenu />
     <TestCheckbox />
+    <TestRadio />
+    <TestToggle />
   </div>
 </template>
 
