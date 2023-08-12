@@ -44,6 +44,7 @@ const online = useOnline()
     <TestVNav />
     <TestComPalette />
     <TestTabs />
+    <TestModal />
   </div>
 </template>
 
