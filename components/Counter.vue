@@ -3,14 +3,14 @@ const { count, inc, dec } = useCount()
 </script>
 
 <template>
-  <div inline-flex m="y-3">
-    <button rounded-full p-2 btn @click="dec()">
+  <div class="my-3 inline-flex">
+    <button class="inline-block cursor-pointer rounded-full bg-teal-600 p-2 px-4 py-1 text-white disabled:cursor-default disabled:bg-gray-600 hover:bg-teal-700 disabled:opacity-50" @click="dec()">
       <div i-carbon-subtract />
     </button>
-    <div font="mono" w="15" m-auto inline-block>
+    <div class="m-auto inline-block w-14 font-mono">
       {{ count }}
     </div>
-    <button rounded-full p-2 btn @click="inc()">
+    <button class="inline-block cursor-pointer rounded-full bg-teal-600 p-2 px-4 py-1 text-white disabled:cursor-default disabled:bg-gray-600 hover:bg-teal-700 disabled:opacity-50" @click="inc()">
       <div i-carbon-add />
     </button>
   </div>

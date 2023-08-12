@@ -1,17 +1,17 @@
 <template>
-  <div inline-flex cursor-default text-2xl font-300>
-    <div flex flex-col children:mx-auto>
-      <img inline-block h-18 w-18 src="/nuxt.svg">
-      <span mt--2 text-green5>Nuxt 3</span>
+  <div class="inline-flex cursor-default text-2xl font-light">
+    <div class="flex flex-col [&:nth-children]:mx-auto">
+      <img class="inline-block h-16 w-16" src="/nuxt.svg">
+      <span class="mt--2 text-green-500">Nuxt 3</span>
     </div>
     <div
-      text="3xl gray4"
-      m="x-4 y-auto"
-      i-carbon-add transform transition-all-500 hover:rotate-135
-    />
-    <div flex flex-col children:mx-auto>
-      <img inline-block h-18 w-18 src="/vite.png">
-      <span mt--2 text-purple5>Vitesse</span>
+      class="mx-4 my-auto transform text-3xl text-gray-400 transition-all-500 hover:rotate-135"
+    >
+      +
+    </div>
+    <div class="flex flex-col [&:nth-children]:mx-auto">
+      <img class="inline-block h-16 w-16" src="/vite.png">
+      <span class="mt--2 text-purple-500">Vitesse</span>
     </div>
   </div>
 </template>
