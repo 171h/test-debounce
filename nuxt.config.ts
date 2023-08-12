@@ -4,9 +4,7 @@ import { appDescription } from './constants/index'
 export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
-    '@unocss/nuxt',
     '@pinia/nuxt',
-    '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     '@nuxthq/ui',
   ],
@@ -20,12 +18,7 @@ export default defineNuxtConfig({
     typedPages: true,
   },
 
-  css: [
-    // '@unocss/reset/tailwind-compat.css',
-    // '~/assets/css/tailwind.css',
-    // '@unocss/reset/tailwind.css',
-    // '@unocss/reset/eric-meyer.css',
-  ],
+  css: [],
 
   colorMode: {
     classSuffix: '',
